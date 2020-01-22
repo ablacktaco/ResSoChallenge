@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B33B431A23CD540500441CAB /* RedSoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33B431923CD540500441CAB /* RedSoModel.swift */; };
+		B33B431C23CDC93D00441CAB /* BannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33B431B23CDC93D00441CAB /* BannerCell.swift */; };
+		B35AE3CC23D31F03006908D5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35AE3CB23D31F02006908D5 /* MainView.swift */; };
+		B35AE3CF23D4808F006908D5 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B35AE3CE23D4808F006908D5 /* Kingfisher */; };
+		B3FB923123D5557E006119CE /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FB923023D5557E006119CE /* ImageManager.swift */; };
+		B3FB923323D55D2B006119CE /* TeamTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FB923223D55D2B006119CE /* TeamTableView.swift */; };
+		B3FFB54923C424DC001C7E27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFB54823C424DC001C7E27 /* AppDelegate.swift */; };
+		B3FFB54B23C424DC001C7E27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFB54A23C424DC001C7E27 /* SceneDelegate.swift */; };
+		B3FFB55023C424DC001C7E27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3FFB54E23C424DC001C7E27 /* Main.storyboard */; };
+		B3FFB55223C424E4001C7E27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3FFB55123C424E4001C7E27 /* Assets.xcassets */; };
+		B3FFB55523C424E4001C7E27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3FFB55323C424E4001C7E27 /* LaunchScreen.storyboard */; };
+		B3FFB56023C9BC31001C7E27 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFB55F23C9BC31001C7E27 /* MainViewController.swift */; };
+		B3FFB56223C9BC70001C7E27 /* TeamPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFB56123C9BC70001C7E27 /* TeamPageController.swift */; };
+		B3FFB56423C9BC93001C7E27 /* TeamTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFB56323C9BC93001C7E27 /* TeamTableController.swift */; };
+		B3FFB56623C9BFB1001C7E27 /* EmployeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFB56523C9BFB1001C7E27 /* EmployeeCell.swift */; };
+		B3FFB59E23CCAABF001C7E27 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFB59123CCAABF001C7E27 /* ParameterEncoding.swift */; };
+		B3FFB59F23CCAABF001C7E27 /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFB59223CCAABF001C7E27 /* URLParameterEncoder.swift */; };
+		B3FFB5A023CCAABF001C7E27 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFB59323CCAABF001C7E27 /* JSONParameterEncoder.swift */; };
+		B3FFB5A123CCAABF001C7E27 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFB59523CCAABF001C7E27 /* NetworkManager.swift */; };
+		B3FFB5A223CCAABF001C7E27 /* RedSoEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFB59723CCAABF001C7E27 /* RedSoEndPoint.swift */; };
+		B3FFB5A323CCAABF001C7E27 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFB59823CCAABF001C7E27 /* EndPointType.swift */; };
+		B3FFB5A423CCAABF001C7E27 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFB59A23CCAABF001C7E27 /* NetworkRouter.swift */; };
+		B3FFB5A523CCAABF001C7E27 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFB59B23CCAABF001C7E27 /* HTTPTask.swift */; };
+		B3FFB5A623CCAABF001C7E27 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFB59C23CCAABF001C7E27 /* HTTPMethod.swift */; };
+		B3FFB5A723CCAABF001C7E27 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFB59D23CCAABF001C7E27 /* Router.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B33B431923CD540500441CAB /* RedSoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedSoModel.swift; sourceTree = "<group>"; };
+		B33B431B23CDC93D00441CAB /* BannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCell.swift; sourceTree = "<group>"; };
+		B35AE3CB23D31F02006908D5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B3FB923023D5557E006119CE /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		B3FB923223D55D2B006119CE /* TeamTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableView.swift; sourceTree = "<group>"; };
+		B3FFB54523C424DC001C7E27 /* RedSoChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedSoChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3FFB54823C424DC001C7E27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B3FFB54A23C424DC001C7E27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B3FFB54F23C424DC001C7E27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B3FFB55123C424E4001C7E27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3FFB55423C424E4001C7E27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B3FFB55623C424E4001C7E27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3FFB55F23C9BC31001C7E27 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B3FFB56123C9BC70001C7E27 /* TeamPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPageController.swift; sourceTree = "<group>"; };
+		B3FFB56323C9BC93001C7E27 /* TeamTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableController.swift; sourceTree = "<group>"; };
+		B3FFB56523C9BFB1001C7E27 /* EmployeeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCell.swift; sourceTree = "<group>"; };
+		B3FFB59123CCAABF001C7E27 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		B3FFB59223CCAABF001C7E27 /* URLParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		B3FFB59323CCAABF001C7E27 /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		B3FFB59523CCAABF001C7E27 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B3FFB59723CCAABF001C7E27 /* RedSoEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedSoEndPoint.swift; sourceTree = "<group>"; };
+		B3FFB59823CCAABF001C7E27 /* EndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		B3FFB59A23CCAABF001C7E27 /* NetworkRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		B3FFB59B23CCAABF001C7E27 /* HTTPTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		B3FFB59C23CCAABF001C7E27 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		B3FFB59D23CCAABF001C7E27 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3FFB54223C424DB001C7E27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B35AE3CF23D4808F006908D5 /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B3FFB53C23C424DB001C7E27 = {
+			isa = PBXGroup;
+			children = (
+				B3FFB54723C424DC001C7E27 /* RedSoChallenge */,
+				B3FFB54623C424DC001C7E27 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B3FFB54623C424DC001C7E27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3FFB54523C424DC001C7E27 /* RedSoChallenge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3FFB54723C424DC001C7E27 /* RedSoChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				B3FFB58F23CCAABF001C7E27 /* NetworkLayer */,
+				B3FFB55E23C4348C001C7E27 /* Model */,
+				B3FFB55D23C43487001C7E27 /* View */,
+				B3FFB55C23C4347A001C7E27 /* Controller */,
+				B3FFB54823C424DC001C7E27 /* AppDelegate.swift */,
+				B3FFB54A23C424DC001C7E27 /* SceneDelegate.swift */,
+				B3FFB55123C424E4001C7E27 /* Assets.xcassets */,
+				B3FFB55623C424E4001C7E27 /* Info.plist */,
+			);
+			path = RedSoChallenge;
+			sourceTree = "<group>";
+		};
+		B3FFB55C23C4347A001C7E27 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B3FFB55F23C9BC31001C7E27 /* MainViewController.swift */,
+				B3FFB56123C9BC70001C7E27 /* TeamPageController.swift */,
+				B3FFB56323C9BC93001C7E27 /* TeamTableController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B3FFB55D23C43487001C7E27 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B3FFB55323C424E4001C7E27 /* LaunchScreen.storyboard */,
+				B3FFB54E23C424DC001C7E27 /* Main.storyboard */,
+				B35AE3CB23D31F02006908D5 /* MainView.swift */,
+				B3FB923223D55D2B006119CE /* TeamTableView.swift */,
+				B3FFB56523C9BFB1001C7E27 /* EmployeeCell.swift */,
+				B33B431B23CDC93D00441CAB /* BannerCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3FFB55E23C4348C001C7E27 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B33B431923CD540500441CAB /* RedSoModel.swift */,
+				B3FB923023D5557E006119CE /* ImageManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B3FFB58F23CCAABF001C7E27 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B3FFB59623CCAABF001C7E27 /* EndPoint */,
+				B3FFB59423CCAABF001C7E27 /* Manager */,
+				B3FFB59923CCAABF001C7E27 /* Service */,
+				B3FFB59023CCAABF001C7E27 /* Encoding */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		B3FFB59023CCAABF001C7E27 /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				B3FFB59123CCAABF001C7E27 /* ParameterEncoding.swift */,
+				B3FFB59223CCAABF001C7E27 /* URLParameterEncoder.swift */,
+				B3FFB59323CCAABF001C7E27 /* JSONParameterEncoder.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		B3FFB59423CCAABF001C7E27 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B3FFB59523CCAABF001C7E27 /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		B3FFB59623CCAABF001C7E27 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				B3FFB59823CCAABF001C7E27 /* EndPointType.swift */,
+				B3FFB59723CCAABF001C7E27 /* RedSoEndPoint.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		B3FFB59923CCAABF001C7E27 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B3FFB59A23CCAABF001C7E27 /* NetworkRouter.swift */,
+				B3FFB59B23CCAABF001C7E27 /* HTTPTask.swift */,
+				B3FFB59C23CCAABF001C7E27 /* HTTPMethod.swift */,
+				B3FFB59D23CCAABF001C7E27 /* Router.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3FFB54423C424DB001C7E27 /* RedSoChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3FFB55923C424E4001C7E27 /* Build configuration list for PBXNativeTarget "RedSoChallenge" */;
+			buildPhases = (
+				B3FFB54123C424DB001C7E27 /* Sources */,
+				B3FFB54223C424DB001C7E27 /* Frameworks */,
+				B3FFB54323C424DB001C7E27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RedSoChallenge;
+			packageProductDependencies = (
+				B35AE3CE23D4808F006908D5 /* Kingfisher */,
+			);
+			productName = RedSoChallenge;
+			productReference = B3FFB54523C424DC001C7E27 /* RedSoChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3FFB53D23C424DB001C7E27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "陳姿穎";
+				TargetAttributes = {
+					B3FFB54423C424DB001C7E27 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = B3FFB54023C424DB001C7E27 /* Build configuration list for PBXProject "RedSoChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3FFB53C23C424DB001C7E27;
+			packageReferences = (
+				B35AE3CD23D4808E006908D5 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = B3FFB54623C424DC001C7E27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3FFB54423C424DB001C7E27 /* RedSoChallenge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3FFB54323C424DB001C7E27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3FFB55523C424E4001C7E27 /* LaunchScreen.storyboard in Resources */,
+				B3FFB55223C424E4001C7E27 /* Assets.xcassets in Resources */,
+				B3FFB55023C424DC001C7E27 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3FFB54123C424DB001C7E27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3FFB5A023CCAABF001C7E27 /* JSONParameterEncoder.swift in Sources */,
+				B3FFB56023C9BC31001C7E27 /* MainViewController.swift in Sources */,
+				B3FFB5A323CCAABF001C7E27 /* EndPointType.swift in Sources */,
+				B3FFB59E23CCAABF001C7E27 /* ParameterEncoding.swift in Sources */,
+				B3FB923323D55D2B006119CE /* TeamTableView.swift in Sources */,
+				B3FFB5A123CCAABF001C7E27 /* NetworkManager.swift in Sources */,
+				B35AE3CC23D31F03006908D5 /* MainView.swift in Sources */,
+				B3FFB5A523CCAABF001C7E27 /* HTTPTask.swift in Sources */,
+				B33B431A23CD540500441CAB /* RedSoModel.swift in Sources */,
+				B3FFB56623C9BFB1001C7E27 /* EmployeeCell.swift in Sources */,
+				B3FFB56423C9BC93001C7E27 /* TeamTableController.swift in Sources */,
+				B3FFB54923C424DC001C7E27 /* AppDelegate.swift in Sources */,
+				B3FB923123D5557E006119CE /* ImageManager.swift in Sources */,
+				B3FFB5A723CCAABF001C7E27 /* Router.swift in Sources */,
+				B3FFB56223C9BC70001C7E27 /* TeamPageController.swift in Sources */,
+				B3FFB5A223CCAABF001C7E27 /* RedSoEndPoint.swift in Sources */,
+				B3FFB5A623CCAABF001C7E27 /* HTTPMethod.swift in Sources */,
+				B3FFB54B23C424DC001C7E27 /* SceneDelegate.swift in Sources */,
+				B3FFB59F23CCAABF001C7E27 /* URLParameterEncoder.swift in Sources */,
+				B3FFB5A423CCAABF001C7E27 /* NetworkRouter.swift in Sources */,
+				B33B431C23CDC93D00441CAB /* BannerCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B3FFB54E23C424DC001C7E27 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3FFB54F23C424DC001C7E27 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B3FFB55323C424E4001C7E27 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3FFB55423C424E4001C7E27 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3FFB55723C424E4001C7E27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B3FFB55823C424E4001C7E27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3FFB55A23C424E4001C7E27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = GS2BYWGX23;
+				INFOPLIST_FILE = RedSoChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.polly.RedSoChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B3FFB55B23C424E4001C7E27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = GS2BYWGX23;
+				INFOPLIST_FILE = RedSoChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.polly.RedSoChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3FFB54023C424DB001C7E27 /* Build configuration list for PBXProject "RedSoChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3FFB55723C424E4001C7E27 /* Debug */,
+				B3FFB55823C424E4001C7E27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3FFB55923C424E4001C7E27 /* Build configuration list for PBXNativeTarget "RedSoChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3FFB55A23C424E4001C7E27 /* Debug */,
+				B3FFB55B23C424E4001C7E27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B35AE3CD23D4808E006908D5 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.13.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B35AE3CE23D4808F006908D5 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B35AE3CD23D4808E006908D5 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B3FFB53D23C424DB001C7E27 /* Project object */;
+}
