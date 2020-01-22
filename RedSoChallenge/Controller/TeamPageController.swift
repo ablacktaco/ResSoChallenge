@@ -10,6 +10,7 @@ import UIKit
 
 class TeamPageController: UIPageViewController {
 
+    //
     private lazy var rangersTableVC = TeamTableController.setID("rangers")
     private lazy var elasticTableVC = TeamTableController.setID("elastic")
     private lazy var dynamoTableVC = TeamTableController.setID("dynamo")

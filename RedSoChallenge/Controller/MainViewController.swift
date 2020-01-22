@@ -10,8 +10,8 @@ import UIKit
 
 class MainViewController: UIViewController {
 
-    var mainView: MainView { view as! MainView }
-    var pageVC: TeamPageController!
+    private var mainView: MainView { view as! MainView }
+    private var pageVC: TeamPageController!
     
     override func viewDidLoad() {
         super.viewDidLoad()

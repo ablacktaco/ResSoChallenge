@@ -7,10 +7,11 @@
 //
 
 import Foundation
+import UIKit
 
 struct RedSoModel: Codable {
     
-    let results: [Result]
+    var results: [Result]
     
     struct Result: Codable {
         let id: String?
@@ -20,5 +21,25 @@ struct RedSoModel: Codable {
         let expertise: [String]?
         let avatar: String?
         let url: String?
+        var imageData: Data?
+        
+        var imageString: String? {
+            return cellImage == .avatar ? avatar : url
+        }
+        
+        var urlRequest: URLRequest {
+            let strURL = cellImage == .url ? url : avatar
+            return .init(url: URL(string: strURL!)!)
+        }
+        
+        var cellImage: ImageType {
+            if avatar != nil { return .avatar }
+            return .url
+        }
     }
+}
+
+enum ImageType {
+    case avatar
+    case url
 }
